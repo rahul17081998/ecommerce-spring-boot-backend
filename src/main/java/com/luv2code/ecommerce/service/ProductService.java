@@ -18,7 +18,7 @@ public class ProductService {
     private static final Logger logger = LoggerFactory.getLogger(ProductService.class);
 
     public Product getProductWithId(Long id){
-        logger.info(" Received request to fetch product with ID: [{}]", id);
+        logger.info("Received request to fetch product with ID: [{}]", id);
         Product product=productRepository.findById(id).get();
         logger.info("fetched product: [{}]", product);
         return product;
